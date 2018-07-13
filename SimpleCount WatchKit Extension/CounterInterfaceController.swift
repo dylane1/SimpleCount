@@ -12,6 +12,10 @@ import Foundation
 
 class CounterInterfaceController: WKInterfaceController {
 
+    @IBOutlet var counterLabel: WKInterfaceLabel!
+    @IBOutlet var addButton: WKInterfaceButton!
+    @IBOutlet var resetButton: WKInterfaceButton!
+    
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         

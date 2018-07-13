@@ -16,9 +16,9 @@
 		A34565C120F867A00089328C /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A34565BF20F867A00089328C /* Interface.storyboard */; };
 		A34565C320F867A10089328C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A34565C220F867A10089328C /* Assets.xcassets */; };
 		A34565CA20F867A10089328C /* SimpleCount WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A34565C920F867A10089328C /* SimpleCount WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		A34565CF20F867A10089328C /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34565CE20F867A10089328C /* InterfaceController.swift */; };
 		A34565D120F867A10089328C /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34565D020F867A10089328C /* ExtensionDelegate.swift */; };
 		A34565D320F867A20089328C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A34565D220F867A20089328C /* Assets.xcassets */; };
+		A34565E320F873330089328C /* CounterInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34565E220F873330089328C /* CounterInterfaceController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -76,10 +76,10 @@
 		A34565C220F867A10089328C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A34565C420F867A10089328C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A34565C920F867A10089328C /* SimpleCount WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "SimpleCount WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A34565CE20F867A10089328C /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
 		A34565D020F867A10089328C /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		A34565D220F867A20089328C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A34565D420F867A20089328C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A34565E220F873330089328C /* CounterInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterInterfaceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,7 +146,7 @@
 		A34565CD20F867A10089328C /* SimpleCount WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				A34565CE20F867A10089328C /* InterfaceController.swift */,
+				A34565E220F873330089328C /* CounterInterfaceController.swift */,
 				A34565D020F867A10089328C /* ExtensionDelegate.swift */,
 				A34565D220F867A20089328C /* Assets.xcassets */,
 				A34565D420F867A20089328C /* Info.plist */,
@@ -295,8 +295,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A34565E320F873330089328C /* CounterInterfaceController.swift in Sources */,
 				A34565D120F867A10089328C /* ExtensionDelegate.swift in Sources */,
-				A34565CF20F867A10089328C /* InterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
