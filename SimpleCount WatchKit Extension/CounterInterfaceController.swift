@@ -16,6 +16,12 @@ class CounterInterfaceController: WKInterfaceController {
     @IBOutlet var addButton: WKInterfaceButton!
     @IBOutlet var resetButton: WKInterfaceButton!
     
+    internal var count = 0 {
+        didSet{
+            counterLabel.setText("\(count)")
+        }
+    }
+    
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         
@@ -31,5 +37,11 @@ class CounterInterfaceController: WKInterfaceController {
         // This method is called when watch view controller is no longer visible
         super.didDeactivate()
     }
-
+    @IBAction func addButtonTapped() {
+        count += 1
+    }
+    @IBAction func resetButtonTapped() {
+        count = 0
+    }
+    
 }

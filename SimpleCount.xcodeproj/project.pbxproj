@@ -80,6 +80,7 @@
 		A34565D220F867A20089328C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A34565D420F867A20089328C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A34565E220F873330089328C /* CounterInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CounterInterfaceController.swift; sourceTree = "<group>"; };
+		A3CC1D2320F88B92009119B3 /* SimpleCount.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SimpleCount.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +124,7 @@
 		A34565AA20F8679F0089328C /* SimpleCount */ = {
 			isa = PBXGroup;
 			children = (
+				A3CC1D2320F88B92009119B3 /* SimpleCount.entitlements */,
 				A34565AB20F8679F0089328C /* AppDelegate.swift */,
 				A34565AD20F8679F0089328C /* ViewController.swift */,
 				A34565AF20F8679F0089328C /* Main.storyboard */,
@@ -222,6 +224,11 @@
 				TargetAttributes = {
 					A34565A720F8679F0089328C = {
 						CreatedOnToolsVersion = 9.4.1;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+						};
 					};
 					A34565B920F867A00089328C = {
 						CreatedOnToolsVersion = 9.4.1;
@@ -506,14 +513,16 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C6TW237FTY;
 				IBSC_MODULE = SimpleCount_WatchKit_Extension;
 				INFOPLIST_FILE = "SimpleCount WatchKit App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = com.slingingpixels.SimpleCount.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
+				SKIP_INSTALL = NO;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 4.3;
@@ -525,14 +534,16 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C6TW237FTY;
 				IBSC_MODULE = SimpleCount_WatchKit_Extension;
 				INFOPLIST_FILE = "SimpleCount WatchKit App/Info.plist";
 				PRODUCT_BUNDLE_IDENTIFIER = com.slingingpixels.SimpleCount.watchkitapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = watchos;
-				SKIP_INSTALL = YES;
+				SKIP_INSTALL = NO;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 4.3;

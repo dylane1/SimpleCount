@@ -12,16 +12,29 @@
         <!--Counter-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller identifier="Counter" hidesWhenLoading="NO" id="AgC-eL-Hgc" customClass="InterfaceController" customModule="SimpleCount_WatchKit_App" customModuleProvider="target">
+                <controller identifier="Counter" hidesWhenLoading="NO" id="AgC-eL-Hgc" customClass="CounterInterfaceController" customModule="SimpleCount_WatchKit_Extension">
                     <items>
                         <label alignment="left" text="0" textAlignment="left" id="sfx-JN-hHw">
                             <color key="textColor" red="1" green="0.83698887468637129" blue="0.58975827305514361" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <fontDescription key="font" type="system" weight="semibold" pointSize="42"/>
                         </label>
                         <separator alignment="left" id="8Bd-oB-rEX"/>
-                        <button width="1" alignment="left" title="Add" id="Lp2-mu-e3K"/>
-                        <button width="1" alignment="left" title="Reset" id="wZ8-7S-cFC"/>
+                        <button width="1" alignment="left" title="Add" id="Lp2-mu-e3K">
+                            <connections>
+                                <action selector="addButtonTapped" destination="AgC-eL-Hgc" id="EB4-ha-lvI"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Reset" id="wZ8-7S-cFC">
+                            <connections>
+                                <action selector="resetButtonTapped" destination="AgC-eL-Hgc" id="ZWZ-9Y-226"/>
+                            </connections>
+                        </button>
                     </items>
+                    <connections>
+                        <outlet property="addButton" destination="Lp2-mu-e3K" id="wfr-Zz-ibF"/>
+                        <outlet property="counterLabel" destination="sfx-JN-hHw" id="wYi-ZF-q9t"/>
+                        <outlet property="resetButton" destination="wZ8-7S-cFC" id="cJ3-Vy-Out"/>
+                    </connections>
                 </controller>
             </objects>
         </scene>
