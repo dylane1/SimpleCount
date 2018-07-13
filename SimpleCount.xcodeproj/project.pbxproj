@@ -1,0 +1,620 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A34565AC20F8679F0089328C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34565AB20F8679F0089328C /* AppDelegate.swift */; };
+		A34565AE20F8679F0089328C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34565AD20F8679F0089328C /* ViewController.swift */; };
+		A34565B120F8679F0089328C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A34565AF20F8679F0089328C /* Main.storyboard */; };
+		A34565B320F867A00089328C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A34565B220F867A00089328C /* Assets.xcassets */; };
+		A34565B620F867A00089328C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A34565B420F867A00089328C /* LaunchScreen.storyboard */; };
+		A34565BB20F867A00089328C /* SimpleCount WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = A34565BA20F867A00089328C /* SimpleCount WatchKit App.app */; };
+		A34565C120F867A00089328C /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A34565BF20F867A00089328C /* Interface.storyboard */; };
+		A34565C320F867A10089328C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A34565C220F867A10089328C /* Assets.xcassets */; };
+		A34565CA20F867A10089328C /* SimpleCount WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = A34565C920F867A10089328C /* SimpleCount WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A34565CF20F867A10089328C /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34565CE20F867A10089328C /* InterfaceController.swift */; };
+		A34565D120F867A10089328C /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A34565D020F867A10089328C /* ExtensionDelegate.swift */; };
+		A34565D320F867A20089328C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A34565D220F867A20089328C /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A34565BC20F867A00089328C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A34565A020F8679F0089328C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A34565B920F867A00089328C;
+			remoteInfo = "SimpleCount WatchKit App";
+		};
+		A34565CB20F867A10089328C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A34565A020F8679F0089328C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A34565C820F867A10089328C;
+			remoteInfo = "SimpleCount WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		A34565DA20F867A20089328C /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				A34565CA20F867A10089328C /* SimpleCount WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A34565DE20F867A20089328C /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				A34565BB20F867A00089328C /* SimpleCount WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		A34565A820F8679F0089328C /* SimpleCount.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleCount.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A34565AB20F8679F0089328C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A34565AD20F8679F0089328C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A34565B020F8679F0089328C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A34565B220F867A00089328C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A34565B520F867A00089328C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A34565B720F867A00089328C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A34565BA20F867A00089328C /* SimpleCount WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SimpleCount WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A34565C020F867A00089328C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		A34565C220F867A10089328C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A34565C420F867A10089328C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A34565C920F867A10089328C /* SimpleCount WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "SimpleCount WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A34565CE20F867A10089328C /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		A34565D020F867A10089328C /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		A34565D220F867A20089328C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A34565D420F867A20089328C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A34565A520F8679F0089328C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A34565C620F867A10089328C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A345659F20F8679F0089328C = {
+			isa = PBXGroup;
+			children = (
+				A34565AA20F8679F0089328C /* SimpleCount */,
+				A34565BE20F867A00089328C /* SimpleCount WatchKit App */,
+				A34565CD20F867A10089328C /* SimpleCount WatchKit Extension */,
+				A34565A920F8679F0089328C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A34565A920F8679F0089328C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A34565A820F8679F0089328C /* SimpleCount.app */,
+				A34565BA20F867A00089328C /* SimpleCount WatchKit App.app */,
+				A34565C920F867A10089328C /* SimpleCount WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A34565AA20F8679F0089328C /* SimpleCount */ = {
+			isa = PBXGroup;
+			children = (
+				A34565AB20F8679F0089328C /* AppDelegate.swift */,
+				A34565AD20F8679F0089328C /* ViewController.swift */,
+				A34565AF20F8679F0089328C /* Main.storyboard */,
+				A34565B220F867A00089328C /* Assets.xcassets */,
+				A34565B420F867A00089328C /* LaunchScreen.storyboard */,
+				A34565B720F867A00089328C /* Info.plist */,
+			);
+			path = SimpleCount;
+			sourceTree = "<group>";
+		};
+		A34565BE20F867A00089328C /* SimpleCount WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				A34565BF20F867A00089328C /* Interface.storyboard */,
+				A34565C220F867A10089328C /* Assets.xcassets */,
+				A34565C420F867A10089328C /* Info.plist */,
+			);
+			path = "SimpleCount WatchKit App";
+			sourceTree = "<group>";
+		};
+		A34565CD20F867A10089328C /* SimpleCount WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A34565CE20F867A10089328C /* InterfaceController.swift */,
+				A34565D020F867A10089328C /* ExtensionDelegate.swift */,
+				A34565D220F867A20089328C /* Assets.xcassets */,
+				A34565D420F867A20089328C /* Info.plist */,
+			);
+			path = "SimpleCount WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A34565A720F8679F0089328C /* SimpleCount */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A34565DF20F867A20089328C /* Build configuration list for PBXNativeTarget "SimpleCount" */;
+			buildPhases = (
+				A34565A420F8679F0089328C /* Sources */,
+				A34565A520F8679F0089328C /* Frameworks */,
+				A34565A620F8679F0089328C /* Resources */,
+				A34565DE20F867A20089328C /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A34565BD20F867A00089328C /* PBXTargetDependency */,
+			);
+			name = SimpleCount;
+			productName = SimpleCount;
+			productReference = A34565A820F8679F0089328C /* SimpleCount.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A34565B920F867A00089328C /* SimpleCount WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A34565DB20F867A20089328C /* Build configuration list for PBXNativeTarget "SimpleCount WatchKit App" */;
+			buildPhases = (
+				A34565B820F867A00089328C /* Resources */,
+				A34565DA20F867A20089328C /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A34565CC20F867A10089328C /* PBXTargetDependency */,
+			);
+			name = "SimpleCount WatchKit App";
+			productName = "SimpleCount WatchKit App";
+			productReference = A34565BA20F867A00089328C /* SimpleCount WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		A34565C820F867A10089328C /* SimpleCount WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A34565D720F867A20089328C /* Build configuration list for PBXNativeTarget "SimpleCount WatchKit Extension" */;
+			buildPhases = (
+				A34565C520F867A10089328C /* Sources */,
+				A34565C620F867A10089328C /* Frameworks */,
+				A34565C720F867A10089328C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "SimpleCount WatchKit Extension";
+			productName = "SimpleCount WatchKit Extension";
+			productReference = A34565C920F867A10089328C /* SimpleCount WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A34565A020F8679F0089328C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Slinging Pixels Media";
+				TargetAttributes = {
+					A34565A720F8679F0089328C = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					A34565B920F867A00089328C = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					A34565C820F867A10089328C = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+				};
+			};
+			buildConfigurationList = A34565A320F8679F0089328C /* Build configuration list for PBXProject "SimpleCount" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A345659F20F8679F0089328C;
+			productRefGroup = A34565A920F8679F0089328C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A34565A720F8679F0089328C /* SimpleCount */,
+				A34565B920F867A00089328C /* SimpleCount WatchKit App */,
+				A34565C820F867A10089328C /* SimpleCount WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A34565A620F8679F0089328C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A34565B620F867A00089328C /* LaunchScreen.storyboard in Resources */,
+				A34565B320F867A00089328C /* Assets.xcassets in Resources */,
+				A34565B120F8679F0089328C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A34565B820F867A00089328C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A34565C320F867A10089328C /* Assets.xcassets in Resources */,
+				A34565C120F867A00089328C /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A34565C720F867A10089328C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A34565D320F867A20089328C /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A34565A420F8679F0089328C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A34565AE20F8679F0089328C /* ViewController.swift in Sources */,
+				A34565AC20F8679F0089328C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A34565C520F867A10089328C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A34565D120F867A10089328C /* ExtensionDelegate.swift in Sources */,
+				A34565CF20F867A10089328C /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A34565BD20F867A00089328C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A34565B920F867A00089328C /* SimpleCount WatchKit App */;
+			targetProxy = A34565BC20F867A00089328C /* PBXContainerItemProxy */;
+		};
+		A34565CC20F867A10089328C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A34565C820F867A10089328C /* SimpleCount WatchKit Extension */;
+			targetProxy = A34565CB20F867A10089328C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A34565AF20F8679F0089328C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A34565B020F8679F0089328C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A34565B420F867A00089328C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A34565B520F867A00089328C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		A34565BF20F867A00089328C /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A34565C020F867A00089328C /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A34565D520F867A20089328C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A34565D620F867A20089328C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A34565D820F867A20089328C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C6TW237FTY;
+				INFOPLIST_FILE = "SimpleCount WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.slingingpixels.SimpleCount.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Debug;
+		};
+		A34565D920F867A20089328C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C6TW237FTY;
+				INFOPLIST_FILE = "SimpleCount WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.slingingpixels.SimpleCount.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Release;
+		};
+		A34565DC20F867A20089328C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C6TW237FTY;
+				IBSC_MODULE = SimpleCount_WatchKit_Extension;
+				INFOPLIST_FILE = "SimpleCount WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.slingingpixels.SimpleCount.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Debug;
+		};
+		A34565DD20F867A20089328C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C6TW237FTY;
+				IBSC_MODULE = SimpleCount_WatchKit_Extension;
+				INFOPLIST_FILE = "SimpleCount WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = com.slingingpixels.SimpleCount.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 4.3;
+			};
+			name = Release;
+		};
+		A34565E020F867A20089328C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C6TW237FTY;
+				INFOPLIST_FILE = SimpleCount/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.slingingpixels.SimpleCount;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A34565E120F867A20089328C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = C6TW237FTY;
+				INFOPLIST_FILE = SimpleCount/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.slingingpixels.SimpleCount;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A34565A320F8679F0089328C /* Build configuration list for PBXProject "SimpleCount" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A34565D520F867A20089328C /* Debug */,
+				A34565D620F867A20089328C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A34565D720F867A20089328C /* Build configuration list for PBXNativeTarget "SimpleCount WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A34565D820F867A20089328C /* Debug */,
+				A34565D920F867A20089328C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A34565DB20F867A20089328C /* Build configuration list for PBXNativeTarget "SimpleCount WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A34565DC20F867A20089328C /* Debug */,
+				A34565DD20F867A20089328C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A34565DF20F867A20089328C /* Build configuration list for PBXNativeTarget "SimpleCount" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A34565E020F867A20089328C /* Debug */,
+				A34565E120F867A20089328C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A34565A020F8679F0089328C /* Project object */;
+}
