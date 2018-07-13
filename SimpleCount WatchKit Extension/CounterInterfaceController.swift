@@ -1,5 +1,5 @@
 //
-//  InterfaceController.swift
+//  CounterInterfaceController.swift
 //  SimpleCount WatchKit Extension
 //
 //  Created by Dylan Edwards on 7/13/18.
@@ -10,22 +10,38 @@ import WatchKit
 import Foundation
 
 
-class InterfaceController: WKInterfaceController {
+class CounterInterfaceController: WKInterfaceController {
 
+    @IBOutlet var counterLabel: WKInterfaceLabel!
+    @IBOutlet var addButton: WKInterfaceButton!
+    @IBOutlet var resetButton: WKInterfaceButton!
+    
+    internal var count = 0 {
+        didSet{
+            counterLabel.setText("\(count)")
+        }
+    }
+    
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         
         // Configure interface objects here.
     }
-    
+
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
         super.willActivate()
     }
-    
+
     override func didDeactivate() {
         // This method is called when watch view controller is no longer visible
         super.didDeactivate()
     }
-
+    @IBAction func addButtonTapped() {
+        count += 1
+    }
+    @IBAction func resetButtonTapped() {
+        count = 0
+    }
+    
 }
