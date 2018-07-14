@@ -4,7 +4,6 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <deployment identifier="watchOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14033"/>
     </dependencies>
@@ -18,7 +17,9 @@
                             <color key="textColor" red="1" green="0.83698887468637129" blue="0.58975827305514361" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <fontDescription key="font" type="system" weight="semibold" pointSize="42"/>
                         </label>
-                        <separator alignment="left" id="8Bd-oB-rEX"/>
+                        <separator alignment="left" id="8Bd-oB-rEX">
+                            <color key="color" red="1" green="0.83698887470000005" blue="0.58975827309999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </separator>
                         <button width="1" alignment="left" title="Add" id="Lp2-mu-e3K">
                             <connections>
                                 <action selector="addButtonTapped" destination="AgC-eL-Hgc" id="EB4-ha-lvI"/>
